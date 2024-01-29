@@ -132,7 +132,14 @@ header .header .properties {
   left: 50%;
   transform: translateX(-50%);
 }
-@media (max-width: 767px) {
+
+@media (max-width: 992px) {
+  header .header .properties {
+    bottom: -15%;
+  }
+}
+
+@media (max-width: 992px) {
   header .header .properties .properties-box {
     margin-bottom: 1rem;
     margin-right: auto;
@@ -188,7 +195,7 @@ header .header .properties .search-properties {
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   header .header .properties .search-properties {
     margin: 0 auto;
   }
@@ -196,6 +203,12 @@ header .header .properties .search-properties {
 
 section {
   padding: 150px 0;
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 150px 0 0;
+  }
 }
 
 .heading-component {
@@ -256,4 +269,73 @@ section#about-us .building-box-1 {
   bottom: -30%;
   left: 35%;
   transform: translateX(50%);
+}
+
+section#properties .slider-item {
+  border-radius: 5px 35px 5px 5px;
+}
+
+section#properties .slider-item .heart {
+  position: absolute;
+  background-color: #28a74554;
+  color: var(--primary-color);
+  width: 45px;
+  height: 45px;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+section#properties .slider-item .location {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+section#properties .slider-item .properties-units span {
+  color: #808080;
+}
+
+section#properties .slider-item .properties-units .properties-units-icon {
+  width: 22px;
+  height: 22px;
+  background-color: #28a7451c;
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#properties .slider-item .know-more button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 25px 10px 10px;
+  border: 1px solid var(--primary-color);
+}
+
+section#properties .slider-item .know-more button:hover {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+section#properties .slider-item .know-more span {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 25px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary-color);
+}
+
+.section-counter {
+  background-color: var(--primary-color);
+  font-weight: 700;
 }
