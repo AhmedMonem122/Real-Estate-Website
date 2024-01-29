@@ -339,3 +339,35 @@ section#properties .slider-item .know-more span {
   background-color: var(--primary-color);
   font-weight: 700;
 }
+
+section#services .services-box {
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+section#services .services-box::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #0000007d;
+  top: 0;
+  left: 0;
+}
+
+section#services .services-box .location {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  z-index: 5;
+}
+
+@media (min-width: 770px) and (max-width: 1200px) {
+  section#services .services-box .location {
+    bottom: 10%;
+    right: 30%;
+  }
+}
