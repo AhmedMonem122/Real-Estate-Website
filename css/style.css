@@ -6,7 +6,10 @@
 body {
   color: var(--secondary-color);
   font-family: "Cairo", sans-serif;
-  /* height: 5000px; */
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -370,4 +373,110 @@ section#services .services-box .location {
     bottom: 10%;
     right: 30%;
   }
+}
+
+section#clients .slider-item {
+  border-radius: 15px;
+  background-color: #fff;
+  height: 310px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+section#clients .slider-item span {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 29.98px;
+  color: #808080;
+}
+
+q {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26.24px;
+  text-align: center;
+  color: #000;
+}
+
+q::before,
+q::after {
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--primary-color);
+  position: absolute;
+}
+
+q::before {
+  content: "\f10d";
+  left: 7px;
+  top: 60%;
+  transform: translateY(-60%);
+}
+
+q::after {
+  content: "\f10e";
+  right: 7px;
+  top: 85%;
+  transform: translateY(-85%);
+}
+
+@media (max-width: 1200px) {
+  q::before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer a {
+  color: white;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+footer .contact .contact-content {
+  width: 210px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+footer .contact .contact-content:hover {
+  color: var(--primary-color);
+}
+
+footer .contact .contact-content i {
+  margin-right: auto;
+}
+
+footer .contact p {
+  direction: ltr;
+}
+
+footer .contact .social {
+  width: 240px;
+}
+
+footer .contact .social div {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer .contact .social div:hover {
+  background-color: var(--primary-color);
+  border: none;
 }
