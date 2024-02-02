@@ -140,6 +140,10 @@ header .header .properties {
   transform: translateX(-50%);
 }
 
+/* header .header .properties .cols .properties-box {
+  background-color: #28a745;
+} */
+
 @media (max-width: 992px) {
   header .header .properties {
     bottom: -15%;
