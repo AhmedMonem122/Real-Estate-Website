@@ -37,21 +37,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item ms-3">
+            <li class="nav-item p-lg-3 p-xl-4">
               <a class="nav-link active" aria-current="page" href="#"
                 >الرئيسية</a
               >
             </li>
-            <li class="nav-item ms-3">
+            <li class="nav-item p-lg-3 p-xl-4">
               <a class="nav-link" href="#about-us">نبذه عنا</a>
             </li>
-            <li class="nav-item ms-3">
+            <li class="nav-item p-lg-3 p-xl-4">
               <a class="nav-link" href="#properties">الخصائص</a>
             </li>
-            <li class="nav-item ms-3">
+            <li class="nav-item p-lg-3 p-xl-4">
               <a class="nav-link" href="#clients">العملاء</a>
             </li>
-            <li class="nav-item ms-3">
+            <li class="nav-item p-lg-3 p-xl-4">
               <a class="nav-link" href="#contact-us">تواصل معانا</a>
             </li>
           </ul>
@@ -97,7 +97,7 @@
             <span>شراء</span>
           </div>
 
-          <div class="properties bg-white">
+          <form class="properties bg-white">
             <div class="row">
               <div class="col-lg-3 cols">
                 <div class="properties-box">
@@ -105,7 +105,15 @@
                     <i class="fa-solid fa-location-dot"></i>
                     <p class="mb-0 me-4">الموقع</p>
                   </div>
-                  <span class="mt-4">القاهرة</span>
+                  <!-- <span class="mt-4">القاهرة</span> -->
+                  <div class="input-box input-select mt-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="القاهرة"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="col-lg-3 cols">
@@ -114,38 +122,67 @@
                     <i class="fa-regular fa-building"></i>
                     <p class="mb-0 me-4">خصائص الوحدة</p>
                   </div>
-                  <span class="mt-4">شقىة</span>
+                  <!-- <span class="mt-4">شقىة</span> -->
+                  <div class="input-box input-select mt-4">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>اختر الطريقة</option>
+                      <option value="1">شقة</option>
+                      <option value="2">فيلا</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-5">
                 <div class="properties-box">
                   <div class="d-flex align-items-center">
                     <i class="fa-solid fa-dollar-sign"></i>
                     <p class="mb-0 me-4">سعر الوحدة</p>
                   </div>
-                  <span class="mt-4">1000$-1500$</span>
+                  <!-- <span class="mt-4">1000$-1500$</span> -->
+                  <div class="input-box mt-4">
+                    <select
+                      class="form-select ms-3"
+                      aria-label="Default select example"
+                    >
+                      <option selected>اختر سعر البداية</option>
+                      <option value="1">500$</option>
+                      <option value="2">1000$</option>
+                    </select>
+                    -
+                    <select
+                      class="form-select me-3"
+                      aria-label="Default select example"
+                    >
+                      <option selected>اختر سعر النهاية</option>
+                      <option value="1">1500$</option>
+                      <option value="2">2000$</option>
+                    </select>
+                  </div>
                 </div>
               </div>
 
-              <div class="col-lg-3">
-                <div class="search-properties">
+              <div class="col-lg-1">
+                <button type="submit" class="search-properties">
                   <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                </button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </header>
 
     <section id="about-us">
       <div class="container">
-        <div class="heading-component">
+        <div class="heading-component mb-5">
           <h3>نبذة عنا</h3>
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-7">
             <div>
               <h2 class="mb-4">نقدم لكم افضل الخدمات</h2>
               <p class="about-us-p">
@@ -190,7 +227,7 @@
             <button class="btn read-more my-3">قراءة المزيد</button>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="position-relative d-none d-md-block">
               <div class="position-absolute building-box-1">
                 <img
@@ -610,7 +647,7 @@
           <h3>الخدمات المتاحة</h3>
         </div>
 
-        <div class="row align-items-start gy-3">
+        <div class="row gy-3">
           <div class="col-lg-4">
             <div class="text-center position-relative services-box">
               <img src="images/Rectangle 26.png" alt="rec" class="img-fluid" />
@@ -653,9 +690,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="row align-items-end gy-3 mt-3">
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-flex align-items-end">
             <div class="text-center position-relative services-box">
               <img src="images/Rectangle 25.png" alt="rec" class="img-fluid" />
 
@@ -683,7 +718,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-flex align-items-end">
             <div class="text-center position-relative services-box">
               <img src="images/Rectangle 24.png" alt="rec" class="img-fluid" />
 

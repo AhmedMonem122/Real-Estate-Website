@@ -56,45 +56,45 @@ $(".counter").counter({
 });
 
 // Disable the right click option
-document.addEventListener("contextmenu", (event) => event.preventDefault());
+// document.addEventListener("contextmenu", (event) => event.preventDefault());
 
-// Disable the keyboards shortcuts
-document.addEventListener(
-  "keydown",
-  (event) => {
-    console.log(event);
+// // Disable the keyboards shortcuts
+// document.addEventListener(
+//   "keydown",
+//   (event) => {
+//     console.log(event);
 
-    if (event.code === "F12") {
-      event.preventDefault();
-      return false;
-    } else if (
-      (event.ctrlKey || event.metaKey) &&
-      (event.shiftKey || event.altKey) &&
-      (event.code === "KeyI" || event.code === "KeyJ" || event.code === "KeyC")
-    ) {
-      event.preventDefault();
-      return false;
-    } else if ((event.ctrlKey || event.metaKey) && event.code === "KeyU") {
-      event.preventDefault();
-      return false;
-    }
-  },
-  false
-);
+//     if (event.code === "F12") {
+//       event.preventDefault();
+//       return false;
+//     } else if (
+//       (event.ctrlKey || event.metaKey) &&
+//       (event.shiftKey || event.altKey) &&
+//       (event.code === "KeyI" || event.code === "KeyJ" || event.code === "KeyC")
+//     ) {
+//       event.preventDefault();
+//       return false;
+//     } else if ((event.ctrlKey || event.metaKey) && event.code === "KeyU") {
+//       event.preventDefault();
+//       return false;
+//     }
+//   },
+//   false
+// );
 
-// Disable the right click with alerts
-if (document.addEventListener) {
-  document.addEventListener(
-    "contextmenu",
-    (e) => {
-      alert("You Can not Do This!");
-      e.preventDefault();
-    },
-    false
-  );
-} else {
-  document.attachEvent("oncontextmenu", function () {
-    alert("You Can not Do This!");
-    window.event.returnValue = false;
-  });
-}
+// // Disable the right click with alerts
+// if (document.addEventListener) {
+//   document.addEventListener(
+//     "contextmenu",
+//     (e) => {
+//       alert("You Can not Do This!");
+//       e.preventDefault();
+//     },
+//     false
+//   );
+// } else {
+//   document.attachEvent("oncontextmenu", function () {
+//     alert("You Can not Do This!");
+//     window.event.returnValue = false;
+//   });
+// }
