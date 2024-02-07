@@ -55,6 +55,14 @@ $(".counter").counter({
   countFrom: 1,
 });
 
+// Selectors
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarTogglerDiv = document.querySelector(".navbar-toggler div");
+
+navbarToggler.addEventListener("click", () => {
+  navbarTogglerDiv.classList.toggle("show-cross");
+});
+
 // Disable the right click option
 // document.addEventListener("contextmenu", (event) => event.preventDefault());
 
