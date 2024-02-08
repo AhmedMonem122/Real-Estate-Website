@@ -51,8 +51,15 @@ $(document).ready(function () {
 
 // Initialize Counter
 
-$(".counter").counter({
-  countFrom: 1,
+// $(".counter").counter({
+//   countFrom: 1,
+//   runOnce: false,
+// });
+
+// Pure Counter
+new PureCounter({
+  selector: ".counter",
+  once: false,
 });
 
 // Selectors
