@@ -374,11 +374,11 @@ section#about-us .building-box-1 {
   transform: translateX(35%);
 }
 
-section#properties .slider-item {
+.slider-item {
   border-radius: 5px 35px 5px 5px;
 }
 
-section#properties .slider-item .heart {
+.slider-item .heart {
   position: absolute;
   background-color: #28a74554;
   color: var(--primary-color);
@@ -389,17 +389,17 @@ section#properties .slider-item .heart {
   cursor: pointer;
 }
 
-section#properties .slider-item .location {
+.slider-item .location {
   position: absolute;
   bottom: 10%;
   right: 5%;
 }
 
-section#properties .slider-item .properties-units span {
+.slider-item .properties-units span {
   color: #808080;
 }
 
-section#properties .slider-item .properties-units .properties-units-icon {
+.slider-item .properties-units .properties-units-icon {
   width: 22px;
   height: 22px;
   background-color: #28a7451c;
@@ -410,20 +410,20 @@ section#properties .slider-item .properties-units .properties-units-icon {
   align-items: center;
 }
 
-section#properties .slider-item .know-more button {
+.slider-item .know-more button {
   background-color: var(--primary-color);
   color: #fff;
   border-radius: 25px 10px 10px;
   border: 1px solid var(--primary-color);
 }
 
-section#properties .slider-item .know-more button:hover {
+.slider-item .know-more button:hover {
   background-color: transparent;
   border-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
-section#properties .slider-item .know-more span {
+.slider-item .know-more span {
   color: var(--primary-color);
   font-weight: 600;
   font-size: 20px;
@@ -637,3 +637,51 @@ footer .contact .social div:hover {
   background-color: var(--primary-color);
   border: none;
 }
+
+/* Start Properties Page */
+
+header .header .main-units-box {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  /* color: white; */
+}
+
+header .header .main-units-box span:last-child {
+  color: var(--primary-color);
+}
+
+header .header .main-units-box i {
+  margin-right: -4%;
+  margin-left: 4%;
+}
+
+section.properties-units-section .menu-bars div:first-child {
+  color: var(--primary-color);
+}
+
+section.properties-units-section .menu-bars div {
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  width: 64px;
+  height: 55px;
+  border: 1px solid #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+section.properties-units-section .slider-item {
+  width: 371px;
+}
+
+@media (max-width: 767px) {
+  section.properties-units-section .slider-item {
+    width: fit-content;
+  }
+}
+
+/* End Properties Page */
