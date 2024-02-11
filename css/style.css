@@ -678,10 +678,63 @@ section.properties-units-section .slider-item {
   width: 371px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   section.properties-units-section .slider-item {
     width: fit-content;
   }
+}
+
+section.properties-units-section form {
+  color: #808080;
+}
+
+section.properties-units-section .search-properties {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  left: 5%;
+  bottom: -35%;
+  transform: translateY(-50%);
+}
+
+section.properties-units-section .search-units {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 25px 10px 10px;
+  border: 1px solid var(--primary-color);
+  padding: 20px 76px;
+}
+
+section.properties-units-section .search-units:hover {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+section.properties-units-section .form-select {
+  background-position: left 0.75rem center;
+}
+
+.form-check .form-check-input {
+  float: right;
+}
+
+.form-check input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.form-check input {
+  background-image: none;
 }
 
 /* End Properties Page */

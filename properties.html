@@ -47,7 +47,7 @@
               <a class="nav-link" href="#about-us">نبذه عنا</a>
             </li>
             <li class="nav-item p-lg-3 p-xl-4">
-              <a class="nav-link active" href="#properties">الوحدات</a>
+              <a class="nav-link active" href="#units">الوحدات</a>
             </li>
             <li class="nav-item p-lg-3 p-xl-4">
               <a class="nav-link" href="#clients">العملاء</a>
@@ -94,8 +94,8 @@
 
     <section id="units" class="properties-units-section">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-8">
+        <div class="row align-items-start">
+          <div class="col-xl-8 col-md-7">
             <div>
               <div class="d-flex align-items-center menu-bars my-4">
                 <div class="ms-3"><i class="fa-solid fa-bars"></i></div>
@@ -649,6 +649,175 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="col-xl-4 col-md-5">
+            <form>
+              <div class="position-relative my-4">
+                <button
+                  type="submit"
+                  class="search-properties position-absolute"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input
+                  type="text"
+                  class="form-control p-3"
+                  id="exampleFormControlInput1"
+                  placeholder="ابحث"
+                />
+              </div>
+
+              <div class="p-3 my-3 border rounded">
+                <h6>اهم نتائج البحث</h6>
+
+                <select
+                  class="form-select my-3 p-3"
+                  aria-label="Default select example"
+                >
+                  <option selected>المدينة</option>
+                  <option value="1">القاهرة</option>
+                  <option value="2">الإسكندرية</option>
+                  <option value="3">الشرقية</option>
+                </select>
+
+                <select
+                  class="form-select my-3 p-3"
+                  aria-label="Default select example"
+                >
+                  <option selected>المساحة</option>
+                  <option value="1">90m</option>
+                  <option value="2">150m</option>
+                  <option value="3">180m</option>
+                </select>
+
+                <select
+                  class="form-select my-3 p-3"
+                  aria-label="Default select example"
+                >
+                  <option selected>عدد الغرف</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select>
+
+                <select
+                  class="form-select my-3 p-3"
+                  aria-label="Default select example"
+                >
+                  <option selected>عدد الحمامات</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+
+                <label for="customRange1" class="form-label my-3"
+                  >سعر الوحدات</label
+                >
+                <input type="range" class="form-range my-3" id="customRange1" />
+
+                <div class="text-center">
+                  <button class="btn search-units" type="submit">
+                    ابحث عن الوحدات
+                  </button>
+                </div>
+              </div>
+
+              <div class="p-3 my-3 border rounded">
+                <h6>نوع الوحدة</h6>
+
+                <select
+                  class="form-select my-3 p-3"
+                  aria-label="Default select example"
+                >
+                  <option selected>شقة</option>
+                  <option value="1">القاهرة</option>
+                  <option value="2">الإسكندرية</option>
+                  <option value="3">الشرقية</option>
+                </select>
+
+                <select
+                  class="form-select my-3 p-3"
+                  aria-label="Default select example"
+                >
+                  <option selected>فيلا</option>
+                  <option value="1">90m</option>
+                  <option value="2">150m</option>
+                  <option value="3">180m</option>
+                </select>
+
+                <select
+                  class="form-select my-3 p-3"
+                  aria-label="Default select example"
+                >
+                  <option selected>فندق</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                </select>
+
+                <select
+                  class="form-select my-3 p-3"
+                  aria-label="Default select example"
+                >
+                  <option selected>اوتيل</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div class="p-3 my-3 border rounded">
+                <h6>سعر الوحدات</h6>
+
+                <div
+                  class="form-check p-3 my-3 border rounded"
+                  style="direction: ltr"
+                >
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    100$ - 1200$
+                  </label>
+                </div>
+
+                <div
+                  class="form-check p-3 my-3 border rounded"
+                  style="direction: ltr"
+                >
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    1200$ - 1500$
+                  </label>
+                </div>
+
+                <div
+                  class="form-check p-3 my-3 border rounded"
+                  style="direction: ltr"
+                >
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault3"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    1500$ - 2000$
+                  </label>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
