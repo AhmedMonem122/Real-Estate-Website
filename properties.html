@@ -98,12 +98,16 @@
           <div class="col-xl-8 col-md-7">
             <div>
               <div class="d-flex align-items-center menu-bars my-4">
-                <div class="ms-3"><i class="fa-solid fa-bars"></i></div>
-                <div><i class="fas fa-th-large"></i></div>
+                <div class="ms-3 bars-box">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="large-box menu-bar-active">
+                  <i class="fas fa-th-large"></i>
+                </div>
               </div>
 
               <div class="row g-4">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-menu-bar">
                   <div class="border bg-white slider-item">
                     <div class="position-relative">
                       <div
@@ -171,7 +175,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-menu-bar">
                   <div class="border bg-white slider-item">
                     <div class="position-relative">
                       <div
@@ -239,7 +243,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-menu-bar">
                   <div class="border bg-white slider-item">
                     <div class="position-relative">
                       <div
@@ -307,7 +311,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-menu-bar">
                   <div class="border bg-white slider-item">
                     <div class="position-relative">
                       <div
@@ -375,7 +379,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-menu-bar">
                   <div class="border bg-white slider-item">
                     <div class="position-relative">
                       <div
@@ -443,7 +447,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-menu-bar">
                   <div class="border bg-white slider-item">
                     <div class="position-relative">
                       <div
@@ -511,7 +515,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-menu-bar">
                   <div class="border bg-white slider-item">
                     <div class="position-relative">
                       <div
@@ -579,7 +583,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-menu-bar">
                   <div class="border bg-white slider-item">
                     <div class="position-relative">
                       <div
@@ -714,7 +718,20 @@
                 <label for="customRange1" class="form-label my-3"
                   >سعر الوحدات</label
                 >
-                <input type="range" class="form-range my-3" id="customRange1" />
+                <div class="my-3 position-relative range-box">
+                  <input
+                    type="range"
+                    class="form-range my-3"
+                    id="customRange1"
+                    min="1"
+                    max="3"
+                  />
+                  <span class="position-absolute start-0">1000$</span>
+                  <span class="position-absolute start-50 translate-middle-x"
+                    >1200$</span
+                  >
+                  <span>1500$</span>
+                </div>
 
                 <div class="text-center">
                   <button class="btn search-units" type="submit">
@@ -822,6 +839,24 @@
         </div>
       </div>
     </section>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center my-4">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <footer id="contact-us">
       <div class="container">

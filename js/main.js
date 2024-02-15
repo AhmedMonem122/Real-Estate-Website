@@ -65,9 +65,32 @@ new PureCounter({
 // Selectors
 const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarTogglerDiv = document.querySelector(".navbar-toggler div");
+const barsIconBox = document.querySelector(".bars-box");
+const largeIconBox = document.querySelector(".large-box");
+const colMenuBar = Array.from(document.querySelectorAll(".col-menu-bar"));
+const sliderItem = Array.from(
+  document.querySelectorAll(".col-menu-bar .slider-item")
+);
 
+// show navbar cross sign
 navbarToggler.addEventListener("click", () => {
   navbarTogglerDiv.classList.toggle("show-cross");
+});
+
+// Menu Bar Functionality in properties page
+
+barsIconBox?.addEventListener("click", () => {
+  colMenuBar.forEach((col) => col.classList.add("col-xl-12"));
+  sliderItem.forEach((item) => item.classList.add("mx-auto"));
+  barsIconBox.classList.add("menu-bar-active");
+  largeIconBox.classList.remove("menu-bar-active");
+});
+
+largeIconBox?.addEventListener("click", () => {
+  colMenuBar.forEach((col) => col.classList.remove("col-xl-12"));
+  // sliderItem.forEach((item) => item.classList.add("mx-auto"));
+  largeIconBox.classList.add("menu-bar-active");
+  barsIconBox.classList.remove("menu-bar-active");
 });
 
 // Disable the right click option
