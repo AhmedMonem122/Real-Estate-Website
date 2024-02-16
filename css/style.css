@@ -684,6 +684,15 @@ section.properties-units-section .slider-item {
   }
 }
 
+@media (min-width: 1200px) {
+  .menu-bar-single-active {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 section.properties-units-section form {
   color: #808080;
 }

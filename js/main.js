@@ -81,14 +81,14 @@ navbarToggler.addEventListener("click", () => {
 
 barsIconBox?.addEventListener("click", () => {
   colMenuBar.forEach((col) => col.classList.add("col-xl-12"));
-  sliderItem.forEach((item) => item.classList.add("mx-auto"));
+  sliderItem.forEach((item) => item.classList.add("menu-bar-single-active"));
   barsIconBox.classList.add("menu-bar-active");
   largeIconBox.classList.remove("menu-bar-active");
 });
 
 largeIconBox?.addEventListener("click", () => {
   colMenuBar.forEach((col) => col.classList.remove("col-xl-12"));
-  // sliderItem.forEach((item) => item.classList.add("mx-auto"));
+  sliderItem.forEach((item) => item.classList.remove("menu-bar-single-active"));
   largeIconBox.classList.add("menu-bar-active");
   barsIconBox.classList.remove("menu-bar-active");
 });
