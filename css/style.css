@@ -651,11 +651,6 @@ header .header .main-units-box span:last-child {
   color: var(--primary-color);
 }
 
-header .header .main-units-box i {
-  margin-right: -4%;
-  margin-left: 4%;
-}
-
 section.properties-units-section .menu-bars .menu-bar-active,
 section.properties-units-details-section .menu-bars .menu-bar-active {
   color: var(--primary-color);
@@ -834,10 +829,24 @@ section.properties-units-details-section .more-suggestions-image .location {
 @media (min-width: 1200px) {
   section.properties-units-details-section .slider-item {
     border-radius: 15px;
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   section.properties-units-details-section .slider-item > div:last-child {
     flex-basis: 390px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 1200px) {
+  section.properties-units-details-section .slider-item {
+    width: 100% !important;
+  }
+
+  section.properties-units-details-section .slider-item > div:first-child img {
+    width: 100%;
   }
 }
 
@@ -934,6 +943,10 @@ section.properties-units-details-section .blueprint-box .properties-units span {
 
 section.properties-units-details-section .blueprint-box p {
   color: #808080;
+}
+
+section.properties-units-details-section {
+  padding: 50px 0;
 }
 
 /* End Properties Details Page */
