@@ -621,7 +621,7 @@ footer .contact .social {
   width: 240px;
 }
 
-footer .contact .social div {
+footer .contact .social a {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -631,11 +631,13 @@ footer .contact .social div {
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
+  padding: 15px;
 }
 
-footer .contact .social div:hover {
+footer .contact .social a:hover {
   background-color: var(--primary-color);
-  border: none;
+  border: 1px solid transparent;
+  color: #fff;
 }
 
 /* Start Properties Page */
@@ -644,7 +646,7 @@ header .header .main-units-box {
   position: absolute;
   bottom: 15%;
   right: 5%;
-  /* color: white; */
+  color: white;
 }
 
 header .header .main-units-box span:last-child {
@@ -947,6 +949,68 @@ section.properties-units-details-section .blueprint-box p {
 
 section.properties-units-details-section {
   padding: 50px 0;
+}
+
+header .properties-units-details-header,
+header .properties-units-header {
+  background: #00000070 url("../images/properties-header-image.jpg") no-repeat
+    scroll 0px 0px;
+
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+}
+
+header .properties-units-details-header .main-units-box,
+header .properties-units-header .main-units-box {
+  z-index: 5;
+}
+
+header .properties-units-details-header::after,
+header .properties-units-header::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+}
+
+@media (max-width: 992px) {
+  header .properties-units-details-header,
+  header .properties-units-header {
+    height: 400px;
+  }
+
+  /* header .properties-units-details-header .building-img-container {
+    height: 350px;
+  }
+
+  header .properties-units-details-header .building-img-container img {
+    height: 100%;
+  } */
+}
+
+@media (max-width: 767px) {
+  header .properties-units-details-header,
+  header .properties-units-header {
+    height: 300px;
+  }
+
+  /* header .properties-units-details-header .building-img-container {
+    height: 250px;
+  }
+
+  header .properties-units-details-header .building-img-container img {
+    height: 100%;
+  } */
+}
+
+@media (max-width: 992px) {
+  iframe {
+    height: auto;
+  }
 }
 
 /* End Properties Details Page */
