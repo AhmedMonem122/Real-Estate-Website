@@ -73,9 +73,9 @@ const sliderItem = Array.from(
 );
 
 // show navbar cross sign
-navbarToggler.addEventListener("click", () => {
-  navbarTogglerDiv.classList.toggle("show-cross");
-});
+// navbarToggler.addEventListener("click", () => {
+//   navbarTogglerDiv.classList.toggle("show-cross");
+// });
 
 // Menu Bar Functionality in properties page
 
